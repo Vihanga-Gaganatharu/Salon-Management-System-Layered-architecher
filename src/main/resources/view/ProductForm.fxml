@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.Controller.ProductFormController">
+   <children>
+      <Pane prefHeight="938.0" prefWidth="1605.0" stylesheets="@../style/style.css">
+         <children>
+            <Label layoutX="273.0" layoutY="12.0" styleClass="fontdash" text="Management" textFill="#ff00a5">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="10.0" styleClass="fontdash" text="Product">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="26.0" layoutY="497.0" prefHeight="433.0" prefWidth="1542.0" styleClass="table">
+               <columns>
+                  <TableColumn fx:id="p_id" prefWidth="153.3333282470703" text="Product Id" />
+                  <TableColumn fx:id="name" prefWidth="212.66665649414062" text="Product Name" />
+                  <TableColumn fx:id="date" prefWidth="189.0" text="Date" />
+                  <TableColumn fx:id="qty" prefWidth="128.0" text="Qty" />
+                  <TableColumn fx:id="price" prefWidth="237.0" text="Price" />
+                  <TableColumn fx:id="item_type" prefWidth="231.0" text="Item Type" />
+                  <TableColumn fx:id="discription" prefWidth="372.0" text="Description" />
+               </columns>
+            </TableView>
+            <Button alignment="CENTER_RIGHT" layoutX="1217.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnManageProductOnAction" prefHeight="74.0" prefWidth="350.0" styleClass="btn" text="     Manage Product">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asstes/icons8-edit-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="274.0" fitWidth="281.0" layoutX="172.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/pro%205.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="274.0" fitWidth="281.0" layoutX="652.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/Pro%202.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="274.0" fitWidth="281.0" layoutX="1152.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/pro%206.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="184.0" layoutY="414.0" prefHeight="54.0" prefWidth="240.0" text="MakeUp  Set">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="654.0" layoutY="414.0" prefHeight="54.0" prefWidth="240.0" text="Body wash">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="1154.0" layoutY="414.0" prefHeight="54.0" prefWidth="240.0" text="Sun Cream">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="443.0" prefHeight="54.0" prefWidth="240.0" text="Rs.1250/=" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="655.0" layoutY="443.0" prefHeight="54.0" prefWidth="240.0" text="Rs.1250/=" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="1156.0" layoutY="442.0" prefHeight="54.0" prefWidth="240.0" text="Rs.1250/=" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

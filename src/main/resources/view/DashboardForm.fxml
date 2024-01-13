@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.Controller.DashboardFormController">
+   <children>
+      <Pane prefHeight="938.0" prefWidth="1628.0">
+         <children>
+            <Pane id="DASHBOARD  HEAD" layoutX="1078.0" layoutY="50.0" prefHeight="121.0" prefWidth="244.0" style="-fx-background-color: FFF4DE;">
+               <children>
+                  <Label layoutX="14.0" layoutY="55.0" text="Total Appoinment">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asstes/Total%20Icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labTotalAppoinemnts" layoutX="74.0" layoutY="4.0" text="29">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="86.0" text="0.8  % from yesterday" textFill="#0b46bc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane id="DASHBOARD  HEAD" layoutX="1348.0" layoutY="50.0" prefHeight="121.0" prefWidth="244.0" style="-fx-background-color: FC9AC2;">
+               <children>
+                  <Label layoutX="14.0" layoutY="55.0" text="Total Employee">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asstes/New%20CIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblemployeecount" layoutX="74.0" layoutY="4.0" text="29">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="86.0" text="0.8  % from yesterday" textFill="#0b46bc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane id="DASHBOARD  HEAD" layoutX="808.0" layoutY="50.0" prefHeight="121.0" prefWidth="244.0" style="-fx-background-color: F3E8FF;">
+               <children>
+                  <Label layoutX="14.0" layoutY="55.0" text="New Customers">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Salon_mona_Mange/src/main/resources/asstes/New%20CIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblcustomercount" layoutX="74.0" layoutY="4.0" text="29">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="86.0" text="0.8  % from yesterday" textFill="#0b46bc">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="103.0" fitWidth="187.0" layoutX="1074.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Salon_mona_Mange/src/main/resources/asstes/Abstractdasboard.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="307.0" layoutY="52.0" styleClass="fontdash" text=" Salon Mona" textFill="#ff00a5">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="649.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/Send%20Icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgDashImage" fitHeight="599.0" fitWidth="1356.0" layoutX="16.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Salon_mona_Mange/src/main/resources/asstes/Leonardo_Diffusion_XL_salon_employees_2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="60.0" layoutY="213.0" prefHeight="56.0" prefWidth="1087.0" styleClass="font4" text="We show your skin, hair, and body the care and attention they deserve." textFill="#ff00a5">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="51.0" styleClass="fontdash" text="Welcome,">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <PieChart fx:id="pieChart" layoutX="1098.0" layoutY="290.0" prefHeight="599.0" prefWidth="500.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

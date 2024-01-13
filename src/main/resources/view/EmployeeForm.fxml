@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.Controller.EmployeeFormController">
+   <children>
+      <Pane prefHeight="938.0" prefWidth="1589.0" stylesheets="@../style/style.css">
+         <children>
+            <Label layoutX="318.0" layoutY="12.0" styleClass="fontdash" text="Management" textFill="#ff00a5">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="10.0" styleClass="fontdash" text="Employee">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblEmployee" layoutX="26.0" layoutY="626.0" prefHeight="304.0" prefWidth="1518.0" styleClass="table">
+               <columns>
+                  <TableColumn fx:id="colEmpid" prefWidth="153.3333282470703" text="Employee Id" />
+                  <TableColumn fx:id="colFname" prefWidth="212.66665649414062" text="First Name" />
+                  <TableColumn fx:id="colLname" prefWidth="241.0" text="Last Name" />
+                  <TableColumn fx:id="colEmail" prefWidth="253.6666259765625" text="email" />
+                  <TableColumn fx:id="colMobile" prefWidth="165.0" text="Phone No" />
+                  <TableColumn fx:id="colNic" prefWidth="195.0" text="Nic No" />
+                  <TableColumn fx:id="colRank" prefWidth="294.0" text="Job Rank" />
+               </columns>
+            </TableView>
+            <ImageView fitHeight="274.0" fitWidth="281.0" layoutX="172.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/Ceo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="274.0" fitWidth="281.0" layoutX="642.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/Team%20%201.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="174.0" layoutY="514.0" prefHeight="54.0" prefWidth="345.0" text="Mr.Sadun">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="644.0" layoutY="514.0" prefHeight="54.0" prefWidth="240.0" text="Miss.Shehara">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="175.0" layoutY="543.0" prefHeight="54.0" prefWidth="240.0" text="Ceo Of Salon Mona" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="645.0" layoutY="543.0" prefHeight="54.0" prefWidth="240.0" text="Specilist of NailArt" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER_RIGHT" layoutX="1206.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnReportsEmpOnAction" prefHeight="58.0" prefWidth="320.0" styleClass="btn" text="   Employee Reports">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asstes/icons8-edit-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="txtEmpIdSerarch" layoutX="1153.0" layoutY="272.0" prefHeight="55.0" prefWidth="363.0" promptText="Search EmpId To Report" styleClass="lablebtn">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <Button layoutX="802.0" layoutY="50.0" mnemonicParsing="false" onAction="#btnAttendanceOnaction" prefHeight="32.0" prefWidth="188.0" styleClass="btncrud" text="Employee Attendance" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="1022.0" layoutY="50.0" mnemonicParsing="false" onAction="#BtnSalaryOnaction" prefHeight="32.0" prefWidth="188.0" styleClass="btncrud" text="Employee Salary" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="1242.0" layoutY="50.0" mnemonicParsing="false" onAction="#btnManageEmpOnAction" prefHeight="32.0" prefWidth="188.0" styleClass="btncrud" text="Employee Manage" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
